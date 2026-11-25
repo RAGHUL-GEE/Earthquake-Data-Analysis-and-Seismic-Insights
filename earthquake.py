@@ -14,7 +14,7 @@ st.set_page_config(
 def get_sqlite_connection():
   # Reads either .csv or .csv.gz depending on what you upload to GitHub
   try:
-    df = pd.read_csv("earthquake_data_last_5_years.csv.gz")
+    df = pd.read_csv("earthquake_data_last_5_years.csv")
   except FileNotFoundError:
     df = pd.read_csv("earthquake_data_last_5_years.csv")
 
